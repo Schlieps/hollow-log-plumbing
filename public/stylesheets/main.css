@@ -1,0 +1,58 @@
+body{
+    font-family: 'Exo 2', sans-serif;
+    padding-bottom: 70px;
+}
+
+p {
+    font-size:1.2em;
+}
+
+#services{
+    font-size:1.2em;
+}
+
+#column{
+    font-size: 1em;
+}
+
+.jumbotron {
+    background-image: url(https://i.imgur.com/DYojAiB.jpg?2); 
+    background-size: cover;
+    color: white;
+}
+
+#content {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#homeTitle {
+	font-weight: 700;
+	font-size: 4.7em;
+}
+
+hr{
+	/*gives shadow effect*/
+	/*border-top: 1px solid #f8f8f8;*/
+	/*border-bottom: 1px solid rgba(0,0,0,0.2);*/
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.post{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+/*CUSTOM CLASSES*/
+/*Green Button*/
+.btn-green {background-color:#7aa078; color: #ffffff}
+.btn-green:hover{color: #000000;}
