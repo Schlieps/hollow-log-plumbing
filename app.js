@@ -26,6 +26,10 @@ app.get("/contact", function(req, res){
     res.render("contact");
 });
 
+app.get("/sitemap", function(req, res){
+    res.render("sitemap");
+});
+
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("HollowLog Server Has Started");
 });
