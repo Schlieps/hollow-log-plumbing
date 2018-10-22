@@ -1,37 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700');
+
+:root{
+    --mainBlue:#3E92CC;
+    --mainWhite:#E5EAFA;
+    --mainBlack:#333333;
+    --mainGreen:#7C9885;
+    --mainRuby:#80475E;
+    --transparentRuby:rgba(128,71,94,0.7);
+}
+
 body{
     font-family: 'Exo 2', sans-serif;
-    padding-bottom: 70px;
+    padding-top: 56px;
+    background:var(--mainWhite);
 }
-
-p {
-    font-size:1.2em;
-}
-
-#services{
-    font-size:1.2em;
-}
-
-#column{
-    font-size: 1em;
-}
-
-.jumbotron {
-    background-image: url(https://i.imgur.com/DYojAiB.jpg?2); 
-    background-size: cover;
-    color: white;
-}
-
-#content {
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
-}
-
-#homeTitle {
-	font-weight: 700;
-	font-size: 4.7em;
-}
-
 hr{
 	/*gives shadow effect*/
 	/*border-top: 1px solid #f8f8f8;*/
@@ -40,19 +22,306 @@ hr{
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+.text-shadow{
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+.gradientBg{
+    background:linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0) 4%)
+}
+.gradientBg2{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0) 4%, rgba(0,0,0,0) 96%, rgba(0,0,0,0.6) 100%)
+}
+.section-title--special{
+    background:var(--mainGreen);
+    color:var(--mainWhite);
+    padding:0.5rem 2rem;
+    clip-path:polygon(10% 0, 100% 0, 90% 100%,0 100%);
+}    
 
-.post{
-	margin-bottom:30px;
-	margin-top:30px;
+/*preloader*/
+.preloader{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:var(--mainWhite);
+    z-index:1100;
+}
+.hidePreloader{
+    display:none!important;
 }
 
-img {
-    width: 100%;
-    margin-top: 15px;
+/*navbar*/
+.navbar{
+    background:var(--mainBlack);
+}
+.navbar-brand{
+    color:var(--mainWhite);
+    transition-property:color;
+    transition-duration:0.3s;
+    transition-timing-function:linear;
+}
+.navbar-brand:hover{
+    color:var(--mainBlue);
+}
+.nav-link{
+    color:var(--mainWhite);
+    transition-property:color;
+    transition-duration:0.3s;
+    transition-timing-function:linear;
+}
+.nav-link:hover{
+    color:var(--mainBlue);
+}
+.navbar-toggler{
+    outline-color:var(--mainGreen)!important;
+}
+.navbar-icon{
+    color:var(--mainWhite);
+}
+.navbar-text{
+    color:var(--mainWhite);
 }
 
+/*header*/
+.header-home {
+    background-image: url(https://i.imgur.com/DYojAiB.jpg?3); 
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color:var(--mainWhite);
+    min-height:340px;
+}
+.title {
+	font-weight: 700;
+	font-size: 4.7em;
+}
+.bg1{
+    background:rgba(0,0,0,0.4);
+    border-left: 0.5rem solid var(--mainGreen);
+    max-width:500px;
+}
+.bg2{
+    background:var(--transparentRuby);
+    border-radius: 10%;
+    width:296px;
+}
 
-/*CUSTOM CLASSES*/
-/*Green Button*/
-.btn-green {background-color:#7aa078; color: #ffffff}
-.btn-green:hover{color: #000000;}
+/*carousel section*/
+.featured-item{
+    background: var(--mainWhite);
+    border-radius:0.5rem;
+    border:2px solid var(--mainRuby);
+    opacity: 0.6;
+    transition: all 1s ease-in-out;
+}
+.featured-item:hover{
+    opacity:1;
+    transform:scale(1.05);
+}
+.featured-icon{
+    font-size:1.5rem;
+    color: var(--mainBlack);
+    transition:all 0.5s ease-in-out;
+}
+.featured-icon:hover{
+    color:var(--mainBlue);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+}
+.carousel-img{
+    border-radius: 5%;
+}
+
+/*footer*/
+.footer{
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(229,234,250,0.8),var(--mainBlack)15%);
+}
+
+/*about page*/
+.header-about{
+    background-image: url(../img/seattle.jpg); 
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color: var(--mainWhite);
+    min-height: calc(100vh - 56px);
+}
+.bg3{
+    background:rgba(229,234,250,0.8);
+    border-left: 0.5rem solid var(--mainGreen);
+    font-size:1.2rem;
+    color: var(--mainBlack);
+}
+.bg4{
+    background:rgba(0,0,0,0.1);
+    border-left: 0.5rem solid var(--mainRuby);
+    font-size:1.2rem;
+}
+.about{
+    position:relative;
+    min-height: 60vh;
+    max-width: 100vw;
+    margin:0 auto;
+}
+.video-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-3;
+    overflow: hidden;
+
+}
+.video-item{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.philosophy{
+    background:rgba(0,0,0,0.6);
+    color: var(--mainWhite);
+    border-radius: 5%;
+    transition: all 0.7s ease-in-out;
+}
+.philosophy:hover{
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+}
+.service-icon{
+    font-size:4rem;
+    color:var(--mainWhite);
+    transition: all 0.7s ease-in-out;
+}
+.philosophy:hover .service-icon{
+    color:var(--mainBlue);
+}
+.hollowLogs-photo{
+    background-image:url(../img/hollowLogs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    border-radius: 5%;
+}
+.sketch-photo{
+    background-image: url(../img/sketch.jpg);
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:25vh;
+}
+
+/*services page*/
+.header-services{
+    background-image: url(../img/bathroom.jpg); 
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color: var(--mainWhite);
+    min-height: calc(100vh - 56px);
+}
+#accordian a{
+    text-decoration:none;
+    color: var(--mainBlue);
+}
+#accordian .card-header{
+    background-color:rgba(229,234,250,0.9);
+}
+#accordian .card{
+    background-color:transparent;
+}
+#accordian .card-body{
+    background-color: rgba(229,234,250,0.8);
+    color:var(--mainBlack);
+    font-size: 1.1rem;
+}
+
+/*gallery section*/
+.item-container{
+    position:relative;
+    /*for the link*/
+    overflow:hidden;
+    background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
+    outline-color: var(--mainWhite);
+    transition: all 2s ease;
+    border-radius: 5%;
+}
+.item-img{
+    transition:all 2s ease;
+}
+.item-container:hover .item-img{
+    transform:scale(1.2);
+    opacity: 0.5;
+}
+.item-link{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:var(--mainWhite);
+    font-size: 2rem;
+    border-top: 2px solid var(--mainWhite);
+    border-bottom: 2px solid var(--mainWhite);
+    transition:all 2s ease;
+    opacity: 0;
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-link:hover{
+    color: var(--mainBlue);
+    border: 3px solid var(--mainBlue);
+    background:var(--mainWhite);
+}
+.item-container:hover{
+    outline:10px solid var(--mainRuby);
+    outline-offset: 0.8rem;
+}
+
+/*before after*/
+.custom-button button{
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+    border: 2px solid var(--mainBlue);
+    transition: all 1s ease-in-out;
+}
+.custom-button button:hover{
+    background: var(--mainBlack);
+    color:var(--mainWhite);
+}
+.btn:focus, .btn:active {
+  box-shadow: none!important;
+}
+.img-container{
+    position:relative;
+    background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
+    transition: all 1s ease;
+}
+.before-after-image{
+    transition: all 1s ease;
+}
+.img-container:hover .before-after-image{
+    opacity: 0.5;
+}
+.image-description{
+    color:var(--mainWhite);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+    transition: all 1s ease;
+}
+.img-container:hover .image-description{
+    opacity:1;
+}

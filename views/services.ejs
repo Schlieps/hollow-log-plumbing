@@ -1,76 +1,207 @@
 <% include ./partials/header %>
 
-<h1>Services</h1>
-<hr>
-<ul id="services">
-    <li>Repairs</li>
-    <li>Repipes</li>
-    <li>Remodels</li>
-    <li>Restorations</li>
-    <li>Restaurants</li>
-    <li>Tenant Improvements</li>
-    <li>New Construction</li>
-    <li>Maintenance</li>
-</ul>
+<!--header-->
+<div class="container-fluid header-services p-5">
+    <!--section title-->
+    <div class="row my-4">
+        <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+            <h1 class="font-weight-bold align-self-center mx-1 text-shadow">our</h1>
+            <h1 class="section-title--special mx-1">services</h1>
+        </div>
+    </div>
+    <!--end of section title-->
+    <div class="row align-items-center">
+        <div class="col-lg-8 col-md-10 my-5 mx-auto">
+            <!--accordian-->
+            <div id="accordian" role="tablist">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0 text-uppercase text-center">
+                            <a data-toggle="collapse" href="#collapseOne">
+                                <i class="fa fa-chevron-down mr-1"></i>
+                                repairs
+                            </a>
+                        </h5>
+                    </div>
+                    <!--end of card header-->
+                    <!--card body-->
+                    <div id="collapseOne" class="collapse" role="tabpanel" data-parent="#accordian">
+                        <div class="card-body text-center">
+                            Description coming soon!
+                        </div>
+                    </div>
+                </div>
+                <!--end of card-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0 text-uppercase text-center">
+                            <a data-toggle="collapse" href="#collapseTwo">
+                                <i class="fa fa-chevron-down mr-1"></i>
+                                tenant improvements
+                            </a>
+                        </h5>
+                    </div>
+                    <!--end of card header-->
+                    <!--card body-->
+                    <div id="collapseTwo" class="collapse" role="tabpanel" data-parent="#accordian">
+                        <div class="card-body text-center">
+                            Description coming soon!
+                        </div>
+                    </div>
+                </div>
+                <!--end of card-->
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0 text-uppercase text-center">
+                            <a data-toggle="collapse" href="#collapseThree">
+                                <i class="fa fa-chevron-down mr-1"></i>
+                                maintenance
+                            </a>
+                        </h5>
+                    </div>
+                    <!--end of card header-->
+                    <!--card body-->
+                    <div id="collapseThree" class="collapse" role="tabpanel" data-parent="#accordian">
+                        <div class="card-body text-center">
+                            Description coming soon!
+                        </div>
+                    </div>
+                </div>
+                <!--end of card-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--end of header-->
 
-<!--<p>-->
-<!--Backflow Preventer Installation-->
-<!--Bathtub Installation-->
-<!--Conventional Electric Water Heater Installation-->
-<!--Conventional Gas Water Heater Installation-->
-<!--Conventional Water Heater Installation-->
-<!--Drain Cleaning-->
-<!--Drain Installation-->
-<!--Drain Unclogging-->
-<!--Drains-->
-<!--Faucet Installation-->
-<!--Faucet Repair-->
-<!--Frozen Pipe Repair-->
-<!--Hydro Jetting-->
-<!--Lead Pipe Replacement-->
-<!--Plumbing-->
-<!--Plumbing Fixtures-->
-<!--Plumbing Fixtures Installation-->
-<!--Plumbing Fixtures Repair-->
-<!--Plumbing Inspection-->
-<!--Plumbing Leak Detection and Repair-->
-<!--Plumbing Re-Piping-->
-<!--Rough Plumbing and Pipe Fitting-->
-<!--Shower Installation-->
-<!--Sink Installation-->
-<!--Steam Fitting-->
-<!--Sump Pump Installation-->
-<!--Sump Pump Repair-->
-<!--Sump Pumps-->
-<!--Tankless Electric Water Heater Installation-->
-<!--Tankless Gas Water Heater Installation-->
-<!--Tankless Water Heater Installation-->
-<!--Toilet Installation-->
-<!--Toilet Repair-->
-<!--Trenchless Underground Pipe Replacement-->
-<!--Water Heater Inspection-->
-<!--Water Heater Installation-->
-<!--Water Heater Repair-->
-<!--Water Heaters-->
-<!--Water Leak Detection and Repair-->
-<!--Water Line Installation-->
-<!--Water Main Installation-->
-<!--Water Main Repair-->
-<!--Water Purification Systems-->
-<!--Water Quality-->
-<!--Water Softener Installation-->
-<!--Water Softener Repair-->
-<!--Water Softeners-->
-<!--Whole House Water Purification System Installation-->
-<!--Whole House Water Purification System Repair-->
-<!--</p>-->
+<!--gallery section-->
+<div class="container-fluid py-5 gradientBg">
+    <!--section title-->
+    <div class="row my-4">
+        <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+            <h1 class="font-weight-bold align-self-center mx-1">our</h1>
+            <h1 class="section-title--special mx-1">gallery</h1>
+        </div>
+    </div>
+    <!--end of section title-->
+    <div class="row parent-container px-3">
+        <!--gallery item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+                <img src="img/gallery-item-1.jpg" class="img-fluid item-img" alt="gallery item">
+                <a href="img/gallery-item-1.jpg">
+                    <h1 class="text-uppercase text-center item-link px-3">laundry room</h1>
+                </a>
+            </div>
+        </div>
+        <!--end gallery item-->
+        <!--gallery item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+                <img src="img/gallery-item-2.jpg" class="img-fluid item-img" alt="gallery item">
+                <a href="img/gallery-item-2.jpg">
+                    <h1 class="text-uppercase text-center item-link px-3">braeburn restaurant</h1>
+                </a>
+            </div>
+        </div>
+        <!--end gallery item-->
+        <!--gallery item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+                <img src="img/gallery-item-3.jpg" class="img-fluid item-img" alt="gallery item">
+                <a href="img/gallery-item-3.jpg">
+                    <h1 class="text-uppercase text-center item-link px-3">shower heads</h1>
+                </a>
+            </div>
+        </div>
+        <!--end gallery item-->
+        <!--gallery item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+                <img src="img/gallery-item-4.jpg" class="img-fluid item-img" alt="gallery item">
+                <a href="img/gallery-item-4.jpg">
+                    <h1 class="text-uppercase text-center item-link px-3">kitchen piping</h1>
+                </a>
+            </div>
+        </div>
+        <!--end gallery item-->
+        <!--gallery item-->
+        <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+            <div class="item-container">
+                <img src="img/gallery-item-5.jpg" class="img-fluid item-img" alt="gallery item">
+                <a href="img/gallery-item-5.jpg">
+                    <h1 class="text-uppercase text-center item-link px-3">filtration system</h1>
+                </a>
+            </div>
+        </div>
+        <!--end gallery item-->
+    </div>
+</div>
 
-<p><i class="fas fa-toolbox"></i> Servicing South Whidbey Island.</p>
-<hr>
-<p><strong>Call or email now for a free estimate:</strong><br>
-<i class="fas fa-phone"></i> 206-999-6387 (cell)<br>
-<i class="fas fa-phone"></i> 360-730-2346 (office)<br>
-<i class="fas fa-envelope"></i> <a href="mailto:hollowlogplumbing@gmail.com">hollowlogplumbing@gmail.com</a></p>
-<p>WE ARE LICENSED, BONDED, AND INSURED<br>License # HOLLOLP850PH</p>
+<!--before and after section-->
+<div class="container pb-5">
+    <!--section title-->
+    <div class="row my-4">
+        <div class="col d-flex flex-wrap text-uppercase justify-content-center">
+            <h1 class="font-weight-bold align-self-center mx-1">before</h1>
+            <h1 class="section-title--special mx-1">after</h1>
+        </div>
+    </div>
+    <!--end of section title-->
+    <!--button group-->
+    <div class="row">
+        <div class="col text-center">
+            <div class="btn-group custom-button btn-group-lg mb-5 button-group filter-button-group" role="group">
+                <button type="button" class="btn text-uppercase" data-filter="*">all</button>
+                <button type="button" class="btn text-uppercase" data-filter=".before">before</button>
+                <button type="button" class="btn text-uppercase" data-filter=".after">after</button>
+            </div>
+        </div>
+    </div>
+    <!--end of button group-->
+    <!--images row-->
+    <div class="row grid before-after">
+        <!--single image-->
+        <div class="col-sm-6 my-3 before">
+            <article class="img-container">
+                <img src="img/before-1.jpg" class="img-fluid before-after-image">
+                <h2 class="text-center text-capitalize image-description px-3">
+                    before:<br><small>nothing supported,<br>too many 90s,<br>no isolation valves</small>
+                </h2>
+            </article>
+        </div>
+        <!--end of single image-->
+        <!--single image-->
+        <div class="col-sm-6 my-3 after">
+            <article class="img-container">
+                <img src="img/after-1.jpg" class="img-fluid before-after-image">
+                <h2 class="text-center text-capitalize image-description px-3">
+                    after:<br><small>re-worked filter system</small>
+                </h2>
+            </article>
+        </div>
+        <!--end of single image-->
+        <!--single image-->
+        <div class="col-sm-6 my-3 after">
+            <article class="img-container">
+                <img src="img/after-2.jpg" class="img-fluid before-after-image">
+                <h2 class="text-center text-capitalize image-description px-3">
+                    after:<br><small>correctly installed hot water tank</small>
+                </h2>
+            </article>
+        </div>
+        <!--end of single image-->
+        <!--single image-->
+        <div class="col-sm-6 my-3 before">
+            <article class="img-container">
+                <img src="img/before-2.jpg" class="img-fluid before-after-image">
+                <h2 class="text-center text-capitalize image-description px-3">
+                    before:<br><small>poorly installed hot water tank</small>
+                </h2>
+            </article>
+        </div>
+        <!--end of single image-->
+    </div>
+</div>
 
 <% include ./partials/footer %>
