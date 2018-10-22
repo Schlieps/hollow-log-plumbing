@@ -340,3 +340,8 @@ hr{
 .img-container:hover .image-description{
     opacity:1;
 }
+
+/*products page*/
+.paypal{
+    position: center;
+}
