@@ -162,6 +162,7 @@ hr{
 .header-about{
     background-image: url(../img/seattle.jpg); 
     background-size: cover;
+    background-position: center;
     background-attachment:fixed;
     background-repeat: no-repeat;
     color: var(--mainWhite);
@@ -237,6 +238,7 @@ hr{
 .header-services{
     background-image: url(../img/bathroom.jpg); 
     background-size: cover;
+    background-position: center;
     background-attachment:fixed;
     background-repeat: no-repeat;
     color: var(--mainWhite);
