@@ -2,6 +2,12 @@
     window.addEventListener('load', () => document.querySelector('.preloader').classList.add('hidePreloader'));
 
 $(document).ready(function(){
+    
+    //navbar toggler
+    $('.navbar-toggler').click(function(){
+      $('.navbar-toggler').toggleClass('change')
+    });
+    
     // magnific popup
     $('.parent-container').magnificPopup({
       delegate: 'a', // child items selector, by clicking on it popup will open
