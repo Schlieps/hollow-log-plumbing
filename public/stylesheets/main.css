@@ -107,13 +107,13 @@ hr{
     transition: all 0.5s ease;
 }
 .change .bar1{
-    transform:rotate(-45deg) translate(-5px,6px);
+    transform:rotate(-45deg) translate(-5.5px,6px);
 }
 .change .bar2{
     opacity:0;
 }
 .change .bar3{
-    transform:rotate(45deg) translate(-5px,-8px);
+    transform:rotate(45deg) translate(-5.5px,-6px);
 }
 /*header*/
 .header-home {
