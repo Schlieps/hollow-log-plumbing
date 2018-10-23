@@ -340,3 +340,6 @@ hr{
 .img-container:hover .image-description{
     opacity:1;
 }
+.before-after-bg{
+    background: rgba(0,0,0,0.1);
+}
