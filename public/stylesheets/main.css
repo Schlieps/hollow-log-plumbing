@@ -89,15 +89,32 @@ hr{
     color:var(--mainBlue);
 }
 .navbar-toggler{
-    outline-color:var(--mainGreen)!important;
-}
-.navbar-icon{
-    color:var(--mainWhite);
+    outline-color:var(--mainBlack)!important;
 }
 .navbar-text{
     color:var(--mainWhite);
 }
-
+.toggler-btn{
+    padding:5px;
+    border:2px solid var(--mainWhite);
+    transition:all 2s ease;
+}
+.bar{
+    width:30px;
+    height:3px;
+    margin:5px;
+    background:var(--mainWhite);
+    transition: all 0.5s ease;
+}
+.change .bar1{
+    transform:rotate(-45deg) translate(-5.5px,6px);
+}
+.change .bar2{
+    opacity:0;
+}
+.change .bar3{
+    transform:rotate(45deg) translate(-5.5px,-6px);
+}
 /*header*/
 .header-home {
     background-image: url(https://i.imgur.com/DYojAiB.jpg?3); 
