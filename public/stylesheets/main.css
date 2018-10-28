@@ -95,8 +95,6 @@ hr{
     color:var(--mainWhite);
 }
 .toggler-btn{
-    padding:5px;
-    border:2px solid var(--mainWhite);
     transition:all 2s ease;
 }
 .bar{
