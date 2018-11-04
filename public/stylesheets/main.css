@@ -50,7 +50,6 @@ hr{
     color:var(--mainWhite);
     padding:0.5rem 2rem;
     clip-path:polygon(10% 0, 100% 0, 90% 100%,0 100%);
-    /*border-radius: 30%;*/
 }    
 
 /*preloader*/
@@ -125,7 +124,7 @@ hr{
 }
 .title {
 	font-weight: 700;
-	font-size: 4.7em;
+	font-size: 4em;
 }
 .bg1{
     background:rgba(0,0,0,0.4);
@@ -137,7 +136,9 @@ hr{
     border-radius: 10%;
     width:296px;
 }
-
+.bg5{
+    background:rgba(0,0,0,0.1);
+}
 /*carousel section*/
 .featured-item{
     background: var(--mainWhite);
@@ -186,13 +187,11 @@ hr{
 }
 .bg3{
     background:rgba(229,234,250,0.8);
-    border-left: 0.5rem solid var(--mainGreen);
     font-size:1.2rem;
     color: var(--mainBlack);
 }
 .bg4{
     background:rgba(0,0,0,0.1);
-    border-left: 0.5rem solid var(--mainRuby);
     font-size:1.2rem;
 }
 .about{
@@ -241,6 +240,7 @@ hr{
     background-repeat: no-repeat;
     min-height: 90vh;
     border-radius: 5%;
+
 }
 .sketch-photo{
     background-image: url(../img/sketch.jpg);
@@ -337,9 +337,11 @@ hr{
     position:relative;
     background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
     transition: all 1s ease;
+    border-radius: 5%;
 }
 .before-after-image{
     transition: all 1s ease;
+    border-radius: 5%;
 }
 .img-container:hover .before-after-image{
     opacity: 0.5;
