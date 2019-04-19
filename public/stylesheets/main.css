@@ -19,11 +19,13 @@ body{
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
-     .header-services,.header-home,.header-about { background-attachment: scroll !important; }
+     .webp .header-services,.header-home,.header-about { background-attachment: scroll !important; }
+     .no-webp .header-services,.header-home,.header-about { background-attachment: scroll !important; }
 }
 
 @media handheld, only screen and (max-width: 668px) {
-     .header-services,.header-home,.header-about { background-attachment: scroll !important; }
+     .webp .header-services,.header-home,.header-about { background-attachment: scroll !important; }
+     .no-webp .header-services,.header-home,.header-about { background-attachment: scroll !important; }
 }
 
 hr{
