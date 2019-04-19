@@ -176,7 +176,16 @@ hr{
 }
 
 /*about page*/
-.header-about{
+.webp .header-about{
+    background-image: url(../img/seattle.webp); 
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color: var(--mainWhite);
+    min-height: calc(100vh - 56px);
+}
+.no-webp .header-about{
     background-image: url(../img/seattle.jpg); 
     background-size: cover;
     background-position: center;
@@ -233,25 +242,47 @@ hr{
 .philosophy:hover .service-icon{
     color:var(--mainBlue);
 }
-.hollowLogs-photo{
+.webp .hollowLogs-photo{
+    background-image:url(../img/hollowLogs.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    border-radius: 5%;
+}
+.no-webp .hollowLogs-photo{
     background-image:url(../img/hollowLogs.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 90vh;
     border-radius: 5%;
-
 }
-.sketch-photo{
+.webp .sketch-photo{
+    background-image: url(../img/sketch.webp);
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:25vh;
+}
+.no-webp .sketch-photo{
     background-image: url(../img/sketch.jpg);
     background-size: initial;
     background-position: center;
     background-repeat: no-repeat;
     min-height:25vh;
 }
-
 /*services page*/
-.header-services{
+.webp .header-services{
+    background-image: url(../img/bathroom.webp); 
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color: var(--mainWhite);
+    min-height: calc(100vh - 56px);
+}
+.no-webp .header-services{
     background-image: url(../img/bathroom.jpg); 
     background-size: cover;
     background-position: center;
@@ -260,7 +291,6 @@ hr{
     color: var(--mainWhite);
     min-height: calc(100vh - 56px);
 }
-
 #accordian a{
     text-decoration:none;
     color: var(--mainBlue);
