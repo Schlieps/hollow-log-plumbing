@@ -370,6 +370,7 @@ hr{
     background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
     transition: all 1s ease;
     border-radius: 5%;
+    max-width:700px;
 }
 .before-after-image{
     transition: all 1s ease;
@@ -392,4 +393,12 @@ hr{
 }
 .before-after-bg{
     background: rgba(0,0,0,0.1);
+}
+.before{
+    display: flex;
+    justify-content: center;
+}
+.after{
+    display: flex;
+    justify-content: center;
 }
